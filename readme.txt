@@ -13,7 +13,8 @@ Rejoignez les utilisateurs de Neeed.com et affichez sur votre blog, dans vos art
 == Description ==
 
 = Neeed, votre liste de shopping facile = 
-Rassemblez toutes vos envies simplement grâce à Neeed et affichez vos envies sur votre dans vos articles ou votre barre de widget grâce à son plugin officiel. 
+
+Rassemblez toutes vos envies simplement grâce à Neeed et affichez vos envies sur votre blog dans vos articles ou votre barre de widget grâce à son plugin officiel. 
 
 
 

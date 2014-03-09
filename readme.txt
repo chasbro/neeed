@@ -58,7 +58,10 @@ Modifiez ses autorisations afin que votre serveur puisse écrire dedans
 
 == Screenshots ==
 
-
+1. Entrez votre clef d'API [Neeed](http://neeed.com) pour activer le plugin 
+2. Configurez le plugin 
+3. Affichez la liste de vos envies, idées dans vos articles 
+4. Configurez le widget Neeed et positionnez le dans votre barre latérale 
 
 
 == Changelog ==

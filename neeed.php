@@ -135,9 +135,7 @@ function get_neeed_articles($atts){
 		$bloginfo 	= get_bloginfo( 'url' );	
 		
 		$url 		=  'http://neeed.com/api/get.php?key='. $neeed_api_key .'&author_url='. $bloginfo .'&mode=articles&count='. $neeed_limit .'&user='. $neeed_user .'&list='. $neeed_list ;
-		
-		echo $url; 
-		
+				
 		$content 	= file_get_contents($url); 
 		
 			 		 	

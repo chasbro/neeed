@@ -3,7 +3,7 @@
  * Plugin Name: Neeed
  * Plugin URI: http://neeed.com/blog/
  * Description: Il est utilisé par des milliers de collectionneurs comme liste de leurs envies... Rejoignez vous-aussi les utilisateurs de Neeed et affichez sur votre blog, dans vos articles ou vos pages la liste de vos envies ! L'utilisation du plugin officiel Neeed requiert un compte <a href="http://neeed.com" target="_blank">Neeed.com</a>
- * Version: 1.1
+ * Version: 1.1.0
  * Author: Amaury Lesplingart 
  * Author URI: http://56k.be
  * License: GPLv2 or later

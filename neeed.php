@@ -52,7 +52,7 @@ function display_my_neeed($title = '' , $h2_class = '' , $ul_class = '' , $li_cl
  		
  		$bloginfo 	= get_bloginfo( 'url' );
  		
- 		$url 		= urlencode( 'http://neeed.com/api/get.php?key='. trim($neeed_api_key) .'&author_url='.$bloginfo.'&mode=articles&count='.$neeed_art_display );
+ 		$url 		= 'http://neeed.com/api/get.php?key='. trim($neeed_api_key) .'&author_url='.$bloginfo.'&mode=articles&count='.$neeed_art_display;
 	 	$content 	= file_get_contents($url);
 	 	$articles 	= json_decode($content, true);
  	
@@ -134,7 +134,10 @@ function get_neeed_articles($atts){
 		
 		$bloginfo 	= get_bloginfo( 'url' );	
 		
-		$url 		=  urlencode( 'http://neeed.com/api/get.php?key='. $neeed_api_key .'&author_url='.$bloginfo.'&mode=articles&count='. $neeed_limit .'&user='. $neeed_user .'&list='. $neeed_list );
+		$url 		=  'http://neeed.com/api/get.php?key='. $neeed_api_key .'&author_url='. $bloginfo .'&mode=articles&count='. $neeed_limit .'&user='. $neeed_user .'&list='. $neeed_list ;
+		
+		echo $url; 
+		
 		$content 	= file_get_contents($url); 
 		
 			 		 	
@@ -297,7 +300,10 @@ class neeedwidget extends WP_Widget{
 			$title		= trim($title); 
 			
 			
-			$url 		= 'http://neeed.com/api/get.php?key='. $neeed_api_key .'&mode=articles&count='. $limit;
+			$bloginfo 	= get_bloginfo( 'url' );	
+		
+			
+			$url 		= 'http://neeed.com/api/get.php?key='. $neeed_api_key .'&author_url='.$bloginfo.'&mode=articles&count='. $limit;
 			$content	= file_get_contents($url); 
 			$articles 	= json_decode($content, true);
 			

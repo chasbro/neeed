@@ -36,7 +36,8 @@ Vous pouvez :
 3. Affichez et customisez l’affichage de vos produits grâce à la fonction PHP neeed() 
 
 
-== Questions fréquentes ==
+== Frequently Asked Questions == 
+
 
 = Où trouver ma clef d'API Neeed ? =
 

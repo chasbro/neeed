@@ -4,7 +4,7 @@ Donate link: [56k](http://56k.be/)
 Tags: product, list, shopping, products, neeed, need, 56k
 Requires at least: 3.7.0
 Tested up to: 3.8.1
-Stable tag: 1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,8 @@ Rejoignez les utilisateurs de Neeed.com et affichez sur votre blog, dans vos art
 == Description ==
 
 = Neeed, votre liste de shopping facile = 
-Rassemblez toutes vos envies simplement grâce à Neeed et affichez vos envies sur votre dans vos articles ou votre barre de widget grâce à son plugin officiel. 
+
+Rassemblez toutes vos envies simplement grâce à Neeed et affichez vos envies sur votre blog dans vos articles ou votre barre de widget grâce à son plugin officiel. 
 
 
 
@@ -36,7 +37,8 @@ Vous pouvez :
 3. Affichez et customisez l’affichage de vos produits grâce à la fonction PHP neeed() 
 
 
-== Questions fréquentes ==
+== Frequently Asked Questions == 
+
 
 = Où trouver ma clef d'API Neeed ? =
 
@@ -58,10 +60,19 @@ Modifiez ses autorisations afin que votre serveur puisse écrire dedans
 
 == Screenshots ==
 
-
+1. Entrez votre clef d'API [Neeed](http://neeed.com) pour activer le plugin 
+2. Configurez le plugin 
+3. Affichez la liste de vos envies, idées dans vos articles 
+4. Configurez le widget Neeed et positionnez le dans votre barre latérale 
 
 
 == Changelog ==
+
+= 1.1.1 = 
+* Corrections du fichier de config qui génére des erreurs
+
+= 1.1.0 = 
+* Corrections & modification call APIs
 
 = 1.0 =
 * Display des produits de l'utilisateur en sidebar

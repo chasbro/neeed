@@ -4,7 +4,7 @@ Donate link: [56k](http://56k.be/)
 Tags: product, list, shopping, products, neeed, need, 56k
 Requires at least: 3.7.0
 Tested up to: 3.8.1
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,6 +67,9 @@ Modifiez ses autorisations afin que votre serveur puisse écrire dedans
 
 
 == Changelog ==
+
+= 1.1.1 = 
+* Corrections du fichier de config qui génére des erreurs
 
 = 1.1.0 = 
 * Corrections & modification call APIs

@@ -4,7 +4,7 @@ Donate link: [56k](http://56k.be/)
 Tags: product, list, shopping, products, neeed, need, widget, plugin, sidebar, amazon, bookmark, bookmarks, ecommerce, shop, shortcode, social 
 Requires at least: 3.7.0
 Tested up to: 3.9.1
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

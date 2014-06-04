@@ -1,10 +1,10 @@
 === Neeed ===
 Contributors: 56k , cassard
 Donate link: [56k](http://56k.be/)
-Tags: product, list, shopping, products, neeed, need, 56k
+Tags: product, list, shopping, products, neeed, need, widget, plugin, sidebar, amazon, bookmark, bookmarks, ecommerce, shop, shortcode, social 
 Requires at least: 3.7.0
-Tested up to: 3.8.1
-Stable tag: 1.1.1
+Tested up to: 3.9.1
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,6 +67,14 @@ Modifiez ses autorisations afin que votre serveur puisse écrire dedans
 
 
 == Changelog ==
+
+= 1.1.4 = 
+* Retrait des mauvaise URLs
+
+
+= 1.1.2 = 
+* Vérification si fopen est autorisé sur le serveur, si pas utilisation de cUrl
+
 
 = 1.1.1 = 
 * Corrections du fichier de config qui génére des erreurs

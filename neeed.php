@@ -3,7 +3,7 @@
  * Plugin Name: Neeed
  * Plugin URI: http://neeed.com/blog/
  * Description: Il est utilisé par des milliers de collectionneurs comme liste de leurs envies... Rejoignez vous-aussi les utilisateurs de Neeed et affichez sur votre blog, dans vos articles ou vos pages la liste de vos envies ! L'utilisation du plugin officiel Neeed requiert un compte <a href="http://neeed.com" target="_blank">Neeed.com</a>
- * Version: 1.1.1
+ * Version: 1.1.4
  * Author: Amaury Lesplingart 
  * Author URI: http://56k.be
  * License: GPLv2 or later
@@ -53,7 +53,18 @@ function display_my_neeed($title = '' , $h2_class = '' , $ul_class = '' , $li_cl
  		$bloginfo 	= get_bloginfo( 'url' );
  		
  		$url 		= 'http://neeed.com/api/get.php?key='. trim($neeed_api_key) .'&author_url='.$bloginfo.'&mode=articles&count='.$neeed_art_display;
-	 	$content 	= file_get_contents($url);
+	 	
+	 	if (ini_get('allow_url_fopen') == true) {
+	 		$content 	= file_get_contents($url);
+	 	}
+	 	else{
+		 	$curl = curl_init($url);
+		 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+		 	$content = curl_exec($curl);
+		 	curl_close($curl);
+	 	}
+	 	
+	 	
 	 	$articles 	= json_decode($content, true);
  	
  	
@@ -136,7 +147,15 @@ function get_neeed_articles($atts){
 		
 		$url 		=  'http://neeed.com/api/get.php?key='. $neeed_api_key .'&author_url='. $bloginfo .'&mode=articles&count='. $neeed_limit .'&user='. $neeed_user .'&list='. $neeed_list ;
 				
-		$content 	= file_get_contents($url); 
+		if (ini_get('allow_url_fopen') == true) {
+	 		$content 	= file_get_contents($url);
+	 	}
+	 	else{
+		 	$curl = curl_init($url);
+		 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+		 	$content = curl_exec($curl);
+		 	curl_close($curl);
+	 	} 
 		
 			 		 	
 		$articles 	= json_decode($content, true);
@@ -302,7 +321,17 @@ class neeedwidget extends WP_Widget{
 		
 			
 			$url 		= 'http://neeed.com/api/get.php?key='. $neeed_api_key .'&author_url='.$bloginfo.'&mode=articles&count='. $limit;
-			$content	= file_get_contents($url); 
+			
+			if (ini_get('allow_url_fopen') == true) {
+		 		$content 	= file_get_contents($url);
+		 	}
+		 	else{
+			 	$curl = curl_init($url);
+			 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+			 	$content = curl_exec($curl);
+			 	curl_close($curl);
+		 	}
+			 
 			$articles 	= json_decode($content, true);
 			
 			

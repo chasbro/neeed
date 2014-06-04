@@ -43,7 +43,7 @@ if(!$neeed_api_key){
 	
 	<div class="no-key">
 		
-		<img src="http://beta.neeed.com/core/img/logo.png">
+		<img src="http://neeed.com/core/img/logo.png">
 		
 		<h1>Entrez votre clef d'API</h1>
 		<p>Si vous ne disposez pas d'une clef d'API, connectez vous à votre <a href="http://neeed.com">compte Neeed</a> et rendez vous dans les paramètres de votre compte</p>
@@ -81,7 +81,7 @@ else{
 	<div class="intro">
 		
 		<div class="alignleft" style="margin-right:10px;">
-			<img src="http://beta.neeed.com/core/img/logo.png" class="logo">
+			<img src="http://neeed.com/core/img/logo.png" class="logo">
 		</div>
 		
 		<div class="alignleft">
